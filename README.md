@@ -140,35 +140,6 @@ Jika backend berjalan di komputer lain atau sudah di-deploy, buat file
 melalui `NEXT_PUBLIC_API_URL`. Pastikan file `.env.local` tidak
 di-commit.
 
-## Simulator Data
-
-Simulator memungkinkan dashboard diuji tanpa ESP32.
-
-Jalankan dari folder `backend/`:
-
-``` bash
-# Isi 48 jam data, lalu berhenti
-python simulate.py
-
-# Kirim data baru setiap 120 detik secara terus-menerus
-python simulate.py --live
-
-# Mode live dengan interval 10 detik untuk demo
-python simulate.py --live --interval 10
-
-# Isi 6 jam data tanpa jeda data
-python simulate.py --hours 6 --no-gaps
-```
-
-Simulator menggunakan format paket yang sama dengan `makeJson()` di
-`Send.h`. Skenario simulasi mencakup lonjakan sensor (nilai mentah tetap
-ada, nilai tervalidasi menjadi `NULL`), kegagalan pembacaan sensor,
-perangkat yang berhenti sementara, dan paket `1h_valid`.
-
-Data histori dari simulator dapat dicatat server sebagai **data
-tertunda** pada log. Ini normal untuk data yang waktunya lebih lama
-daripada waktu penerimaan.
-
 ## Deployment Gratis: Vercel + Turso
 
 Vercel tidak menyediakan disk permanen untuk menyimpan file SQLite
