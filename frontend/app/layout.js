@@ -4,7 +4,7 @@ import AppProvider from "@/components/AppContext";
 import Shell from "@/components/Shell";
 
 export const metadata = {
-  title: "Pantau Udara",
+  title: "Air Quality Dashboard",
   description: "Dashboard kualitas udara: CO₂, PM2.5, suhu, dan kelembapan dari sensor ESP32.",
 };
 

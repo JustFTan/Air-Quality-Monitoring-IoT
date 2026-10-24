@@ -26,7 +26,7 @@ function Brand() {
         <rect width="26" height="26" rx="6" style={{ fill: "var(--ink)" }} />
         <path d="M5 9h11a2.5 2.5 0 1 0-2.5-2.5M5 13.5h15a2.5 2.5 0 1 1-2.5 2.5M5 18h8" style={{ stroke: "var(--surface)", fill: "none", strokeWidth: 1.8, strokeLinecap: "round" }} />
       </svg>
-      Pantau Udara
+      Air Quality Dashboard
     </div>
   );
 }
