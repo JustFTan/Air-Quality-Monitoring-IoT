@@ -1,0 +1,30 @@
+# ---------- Python / backend ----------
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Database (dibuat otomatis, jangan ikut di-push)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+
+# ---------- Next.js / frontend ----------
+node_modules/
+.next/
+out/
+npm-debug.log*
+.env.local
+.env*.local
+
+# ---------- Arduino / ESP32 ----------
+# Simpan SSID & password WiFi di file ini, bukan di Tubes.ino
+secrets.h
+build/
+
+# ---------- Editor / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
